@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookPlace - Books</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/fonts/fontawesome-free-6.6.0-web/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="grid">
+        <div class="header__navbar">
+          <div class="header__navbar--logo">
+            <img
+              src="/assets/img/51b9df9e-bookplace-logo-img.png"
+              alt=""
+              class="header__navbar--logo-img"
+            />
+          </div>
+          <div id="mobile-menu" class="icon-mobile">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div id="open" class="header__navbar--list">
+            <ul>
+              <li><a href="/html/main.html">Home</a></li>
+              <li><a href="/page-about/about.html">About</a></li>
+              <li><a href="/page-books/books.html">Books</a></li>
+              <li>
+                <a href="/page-author/BTlon-master/author.html">Author</a>
+              </li>
+              <li><a href="/page-contact/contact/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div id="header-btn" class="header__navbar--login">
+            <button
+              class="btn"
+              onclick="window.location.href='/Login-form/html/signin.html'"
+            >
+              Sign In
+            </button>
+          </div>
+        </div>
+
+        <div class="header__form">
+          <h2>Books 📚</h2>
+          <div class="header__search-content-form">
+            <div class="header__search-content-form--input">
+              <form action="">
+                <input
+                  type="text"
+                  placeholder="Search book, or search author"
+                  class="header__search-form--input"
+                />
+              </form>
+            </div>
+            <div>
+              <button class="header__search-content-form--btn">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-section">
+        <aside>
+          <div class="sort-section item fade-in-right">
+            <h3>Sort</h3>
+            <ul>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Borrow Books</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">New Released</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Hot 🔥 - Low to High</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Hot 🔥 - High to Low</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Borrowed - Low to High</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Borrowed - High to Low</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="category-section item fade-in-right">
+            <h3>Categories</h3>
+            <ul>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Biography & Memoir</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Action & Adventure Fiction</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Business</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Career & Growth</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Children's</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Computers</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Comics & Graphic Novels</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Classics</span>
+              </li>
+            </ul>
+          </div>
+          <div class="category-section item fade-in-right">
+            <h3>Authors</h3>
+            <ul>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Margaret Atwood</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Kaitlyn Greenidge</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Jonathan Rauch</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Louise Maclellan</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Alex Trebek</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Paulo Coelho</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">Paulette Jiles</span>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <span class="author-name">James Wood</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="books-grid item fade-in-left">
+          <div class="book-card">
+            <img src="img/1000caudo.jpg" alt="Book cover" />
+            <h4>1000 câu đối</h4>
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/chientranhtiente.jpg" alt="Book cover" />
+            <h4>Chiến tranh tiền tệ</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/conduongchmayaidi.jpg" alt="Book cover" />
+            <h4>Con đường cực mây ai đi</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/kinanggiaotiep.png" alt="Book cover" />
+            <h4>Kỹ năng giao tiếp</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/kinangtaptrung.png" alt="Book cover" />
+            <h4>Kỹ năng tập trung</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/nhagiakim.jpg" alt="Book cover" />
+            <h4>Nhà giả kim</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/lambanvs.jpg" alt="Book cover" />
+            <h4>Làm bạn với bầu trời</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/nguoigiaunhatbabylon.jpg" alt="Book cover" />
+            <h4>Người giàu nhất Babylon</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/suoiammattroi.jpg" alt="Book cover" />
+            <h4>Suối Nguồn</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/truongca.jpg" alt="Book cover" />
+            <h4>Trường ca</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/tuduynguoc.jpg" alt="Book cover" />
+            <h4>Tự duy ngược</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/mai.jpg" alt="Book cover" />
+            <h4>Ngày mai ngày mai và ngày mai nữa</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/lutreduongtau.jpg" alt="Book cover" />
+            <h4>Lũ trẻ đường tàu</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/hanhtinh.png" alt="Book cover" />
+            <h4>Hành Tinh</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/gocnho.png" alt="Book cover" />
+            <h4>Góc nhỏ</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/chubepyjama.jpg" alt="Book cover" />
+            <h4>chú bé py</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/chienbinhcauvong.jpg" alt="Book cover" />
+            <h4>Chiến binh cầu vồng</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/9786044777481.png" alt="Book cover" />
+            <h4>38 bức thư</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101506Z-001/kehieuluat.jpg"
+              alt="Book cover"
+            />
+            <h4>Kẻ hiểu luật</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101506Z-001/nghethuatdamphan.jpg"
+              alt="Book cover"
+            />
+            <h4>Nghệ thuật đàm phán</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101506Z-001/nghethuattuduy.jpg"
+              alt="Book cover"
+            />
+            <h4>Nghệ thuật tư duy</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101506Z-001/quantrivanhoa.jpg"
+              alt="Book cover"
+            />
+            <h4>Quản trị văn hóa</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101506Z-001/tientetheky.jpg"
+              alt="Book cover"
+            />
+            <h4>Tiền tệ thế kỉ</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101506Z-001/totdenvidai.jpg"
+              alt="Book cover"
+            />
+            <h4>Tốt đến vĩ đại</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101532Z-001/2022_11_01_16_41_58_1-390x510.jpg"
+              alt="Book cover"
+            />
+            <h4>Lịch sử nước Việt bằng tranh</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101532Z-001/9786044777481.png"
+              alt="Book cover"
+            />
+            <h4>38 bức tranh</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101532Z-001/bup_sen_xanh_bia_phien_ban_ky_niem_2020.jpg"
+              alt="Book cover"
+            />
+            <h4>Búp sen xanh</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101532Z-001/chemta-bino_bia1_1.jpg"
+              alt="Book cover"
+            />
+            <h4>Chém tiếng anh không cần dùng não</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101532Z-001/conduongchmayaidi.png"
+              alt="Book cover"
+            />
+            <h4>Con đường chả mấy ai đi</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101532Z-001/gocnho.png"
+              alt="Book cover"
+            />
+            <h4>góc nhỏ</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101532Z-001/hoahoctro.jpg"
+              alt="Book cover"
+            />
+            <h4>Hoa học trò</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101532Z-001/nexus-b_a-m_m.png"
+              alt="Book cover"
+            />
+            <h4>Neus</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img
+              src="img/drive-download-20241028T101532Z-001/tuduymo.png"
+              alt="Book cover"
+            />
+            <h4>Tư duy mở</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/a11.png" alt="Book cover" />
+            <h4>Nhà đầu tư thông minh</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/a2.png" alt="Book cover" />
+            <h4>Cầu đến Terabithia</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+          <div class="book-card">
+            <img src="img/a3.png" alt="Book cover" />
+            <h4>Không bao giờ chia đôi sự khác biệt</h4>
+
+            <div class="rating">☆☆☆☆☆</div>
+          </div>
+
+          <!-- Repeat similar book-cards for other books -->
+        </section>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-header">
+        <div class="footer-header__title">
+          <h2 class="item fade-in-up">
+            Subscribe our newsletter to get <br />
+            latest news & updates
+          </h2>
+        </div>
+        <div class="footer-header__search item fade-in-zoom">
+          <div class="header__search-content-form">
+            <div class="header__search-content-form--input">
+              <form action="">
+                <input
+                  type="text"
+                  placeholder="Your Email Address"
+                  class="header__search-form--input"
+                />
+              </form>
+            </div>
+            <div>
+              <button class="header__search-content-form--btn">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer content-->
+      <div class="footer-main">
+        <div class="footer-main__content">
+          <div>
+            <img src="/assets/img/51b9df9e-bookplace-logo-img.png" alt="" />
+          </div>
+          <div>
+            <p class="footer_gap">
+              Books are the eternal fire of human intelligence.
+            </p>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-main__content">
+          <h3>Come &Find Us</h3>
+          <div class="footer-main__content--list">
+            <i><i class="fa-solid fa-house"></i></i>
+            <p>UTC</p>
+          </div>
+          <div class="footer-main__content--list">
+            <i><i class="fa-solid fa-phone"></i></i>
+            <p>0384050334</p>
+          </div>
+          <div class="footer-main__content--list">
+            <i><i class="fa-regular fa-envelope"></i></i>
+            <p>Support@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-main__content">
+          <div>
+            <h3>Policies</h3>
+            <div class="list-policies">
+              <ul>
+                <li><a href="">Term Of Use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Happy Return</a></li>
+                <li><a href="">Refund Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/assets/main.js"></script>
+</html>
